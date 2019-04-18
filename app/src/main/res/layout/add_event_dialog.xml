@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEditText"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="7dp"
+                    android:id="@+id/imgCloseDialog"
+                    android:src="@mipmap/close_grey"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:text="Add Event"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#a9a9a9"
+                    android:text="Event name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/edtEventName"
+                    android:paddingLeft="15dp"
+                    android:maxLines="1"
+                    android:background="@drawable/grey_corner_background"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:hint="Enter event name here"
+                    android:imeOptions="actionNext"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="15sp"
+                    android:textColor="#a9a9a9"
+                    android:text="Creator name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="Enter event creator name here"
+                    android:background="@drawable/grey_corner_background"
+                    android:imeOptions="actionNext"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:id="@+id/edtCreatorName"
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#a9a9a9"
+                    android:text="Participants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/relativeAddParticipant"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_gravity="center"
+                        android:background="@drawable/grey_corner_background"
+                        android:textColor="#000"
+                        android:hint="Enter Participant name here"
+                        android:maxLines="1"
+                        android:paddingLeft="15dp"
+                        android:inputType="text"
+                        android:textSize="14sp"
+                        android:layout_marginRight="80dp"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/edtParticipants"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/grey_corner_background"
+                        android:id="@+id/tvAddParticipant"
+                        android:layout_alignParentRight="true"
+                        android:text="Add"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#a9a9a9"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/grey_corner_background"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:hint="Pick a date"
+                    android:paddingLeft="15dp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/tvPickDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <Button
+                    android:text="Create Event"
+                    android:id="@+id/btnSubmit"
+                    android:textAllCaps="false"
+                    android:background="@drawable/green_selector"
+                    android:textColor="@drawable/white_text_selector"
+                    android:layout_marginTop="35dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_below="@+id/linear_Layout_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

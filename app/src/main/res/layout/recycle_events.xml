@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearName"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvName"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akash"
+                    android:layout_weight="0.6"
+                    android:id="@+id/tvNameValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearCreator"
+                android:layout_below="@id/linearName"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Creator : "
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvCreator"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akash"
+                    android:layout_weight="0.6"
+                    android:id="@+id/tvCreatorValues"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearParticipants"
+                android:layout_below="@id/linearCreator"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Participants : "
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvParticipants"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akash"
+                    android:layout_weight="0.6"
+                    android:id="@+id/tvParticipantsValues"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearDate"
+                android:layout_below="@id/linearParticipants"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date : "
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-medium"
+                    android:id="@+id/tvDate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akash"
+                    android:layout_weight="0.6"
+                    android:id="@+id/tvDateValues"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgDeleteEvent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/delete_item"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
